@@ -128,6 +128,10 @@
   }
   .page-bg .wrap{ position:relative; z-index:1; padding-block:52px; width:100%; }
   .page-bg, .hero{ text-shadow:0 1px 3px rgba(0,0,0,.7), 0 0 14px rgba(0,0,0,.4); }
+  section.page.page-flat{
+    background:var(--header-bg); min-height:auto; display:block;
+  }
+  section.page.page-flat::before{ content:none; }
   .panel-card{ background:none; padding:0; border-radius:0; }
   .page-bg .eyebrow{ color:var(--gold); }
   .eyebrow{ font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
@@ -246,7 +250,7 @@
 </section>
 
 <!-- ── PUT ULJA (od maslinika do stola) ───────────────────────────── -->
-<section class="page page-bg" id="page-proizvodnja" data-page="proizvodnja" hidden>
+<section class="page page-flat" id="page-proizvodnja" data-page="proizvodnja" hidden>
   <div class="wrap">
    <div class="panel-card">
     <p class="eyebrow">Ulje</p>
