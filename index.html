@@ -111,17 +111,15 @@
   section.page.page-bg{
     padding-block:0; border-bottom:none; position:relative;
     background-size:cover; background-position:center;
+    --ink:#f8f5ea; --muted:#e2ddc8; --line:rgba(248,245,234,.4);
+    --olive:#8fb06d; --olive-2:#a6c586;
   }
   section.page.page-bg::before{
     content:""; position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(20,22,14,.58), rgba(20,22,14,.76));
+    background:linear-gradient(180deg, rgba(17,19,12,.7), rgba(17,19,12,.86));
   }
   .page-bg .wrap{ position:relative; z-index:1; padding-block:52px; }
-  .panel-card{
-    background:color-mix(in srgb, var(--surface) 90%, transparent);
-    backdrop-filter:blur(4px);
-    border-radius:12px; padding:32px 28px;
-  }
+  .panel-card{ background:none; padding:0; border-radius:0; }
   .page-bg .eyebrow{ color:var(--gold); }
   .eyebrow{ font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
   h2.title{ font-size:30px; margin-bottom:22px; }
@@ -138,7 +136,7 @@
   .journey{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
   @media (max-width:760px){ .journey{ grid-template-columns:1fr 1fr; } }
   @media (max-width:460px){ .journey{ grid-template-columns:1fr; } }
-  .step{ background:var(--surface); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+  .step{ border:1px solid var(--line); border-radius:8px; overflow:hidden; }
   .step .num{ font-family:"Cormorant Garamond",serif; font-size:13px; font-weight:700; color:var(--gold); letter-spacing:.1em; padding:12px 14px 0; }
   .step img{ height:150px; width:100%; object-fit:cover; }
   .step h3{ font-size:16px; color:var(--ink); padding:12px 14px 4px; font-family:"Karla",sans-serif; font-weight:700; }
@@ -150,7 +148,7 @@
   .about-grid img{ border-radius:6px; border:1px solid var(--line); }
   .values{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:20px; }
   @media (max-width:520px){ .values{ grid-template-columns:1fr; } }
-  .value{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px; }
+  .value{ border:1px solid var(--line); border-radius:6px; padding:16px; }
   .value h3{ font-size:17px; color:var(--olive); margin-bottom:6px; }
   .value p{ font-size:13.5px; color:var(--muted); line-height:1.55; margin:0; }
 
@@ -160,7 +158,7 @@
   .price-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; max-width:680px; }
   @media (max-width:560px){ .price-grid{ grid-template-columns:1fr; } }
   .price-grid.single{ grid-template-columns:minmax(0,320px); }
-  .price-card{ background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:26px 24px; position:relative; }
+  .price-card{ border:1px solid var(--line); border-radius:8px; padding:26px 24px; position:relative; }
   .price-card.featured{ border-color:var(--gold); }
   .price-card .tag{ position:absolute; top:-11px; right:16px; background:var(--gold); color:#241a06; font-size:11px; font-weight:700; padding:3px 9px; border-radius:3px; }
   .price-card h3{ font-size:16px; color:var(--ink); font-family:"Karla",sans-serif; font-weight:700; margin-bottom:10px; }
@@ -170,7 +168,7 @@
   .price-call{ font-size:14px; font-weight:700; color:var(--olive); text-decoration:underline; }
 
   /* contact */
-  .contact-card{ background:var(--olive); color:#f6f3e8; border-radius:10px; padding:36px 32px; max-width:560px; }
+  .contact-card{ border:1px solid var(--line); border-radius:10px; padding:36px 32px; max-width:560px; }
   .contact-card .eyebrow{ color:#d9d3ba; }
   .phone-big{ font-family:"Cormorant Garamond",serif; font-size:40px; color:#f6f3e8; text-decoration:none; display:block; margin:10px 0 8px; }
   .email-line{ font-size:15px; color:#f0ecd9; text-decoration:underline; display:inline-block; margin-bottom:18px; }
